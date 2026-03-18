@@ -3,7 +3,7 @@ import { getAuth, connectAuthEmulator } from "firebase/auth";
 import { getFirestore, connectFirestoreEmulator } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyA4mo7sgFXRP8LpeZxt8qLxL9RSgFsD3q0",
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
     authDomain: "demotest.firebaseapp.com",
     projectId: "demotest",
 };
